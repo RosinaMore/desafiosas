@@ -1,0 +1,444 @@
+
+  
+  
+  
+  /* ------------------------MAIN---------------------------------- 
+  .main {
+    grid-area: main;
+    background-color: rgb(34, 124, 157);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    justify-content: space-around;
+    padding: 5%;
+  }
+  
+  .animate__animated animate__zoomIn{
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: none;
+    animation-fill-mode: backwards;
+  }
+  */
+  /* ------------------------SECCION 1------------------------------ 
+  .section1 {
+    grid-area: section1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .divclass1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .divclass2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .divclass2 p{
+    font-size: 1rem;
+    height: 15vh;
+    overflow: auto;
+    max-width: 350px;
+  }
+  
+    .divclass2 span {
+    padding: 0.5rem;
+    border-radius: 5pt;
+    color: rgb(254, 217, 183);
+    font-size: 1rem;
+    background-color: rgb(34, 124, 157);
+  }
+  
+    .divclass2 span a:hover {
+    background-color: rgb(15, 53, 67);
+    padding: 0.5rem;
+    color: rgb(254, 217, 183);
+    border-radius: 5pt;
+    text-decoration: underline;
+  }
+
+  */
+  /* -----------SECCION 2 --------------
+  
+  .section2 {
+    grid-area: section2;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }  
+  
+    .divclass3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+    .divclass3 p{
+    font-size: 1rem;
+    height: 15vh;
+    overflow: auto;
+    padding: 2rem;
+    max-width: 350px;
+  }
+  
+    .divclass3 span {
+    padding: 0.5rem;
+    border-radius: 5pt;
+    color: rgb(254, 217, 183);
+    font-size: 1rem;
+    background-color: rgb(34, 124, 157);
+  }
+  
+    .divclass3 span a:hover {
+    background-color: rgb(15, 53, 67);
+    padding: 0.5rem;
+    color: rgb(254, 217, 183);
+    border-radius: 5pt;
+    text-decoration: underline;
+  }
+  */
+  /* ------------------SECCION 3---------------------------- 
+  
+  .section3 {
+    grid-area: section3;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .section3 h2 {
+    color: rgb(34, 124, 157);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 1rem;
+    max-width: 200px;
+  }
+  
+  .section3 span {
+    margin: -2% 20% 0% 7%;
+    padding: 0.5rem;
+    border-radius: 5pt;
+    color: rgb(254, 217, 183);
+    font-size: 1rem;
+    background-color: rgb(34, 124, 157);
+  }
+  
+  .section3 span a:hover {
+    background-color: rgb(15, 53, 67);
+    padding: 0.5rem;
+    color: rgb(254, 217, 183);
+    border-radius: 5pt;
+    text-decoration: underline;
+  }
+  */
+  /* ----------------------ASIDE------------------------------ 
+  
+  .aside {
+    grid-area: aside;
+  }
+  
+  .divclass4{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+  }
+  
+  .aside article a img {
+    padding: 1rem;
+  }
+  
+  .aside article p {
+    font-size: 0.8rem;
+    padding: 1em;
+    max-width: 400px;
+    width: o auto;
+  }
+  
+  .aside h3 {
+    color: rgb(34, 124, 157);
+    margin-top: 10%;
+  }
+  
+  .aside h5 {
+    margin: 10% 0 0 0;
+    color: rgb(34, 124, 157);
+  }
+  */
+  /* --------------FOOTER-------------------- 
+  
+  .footer {
+    grid-area: footer;
+    background-color: rgb(254, 217, 183);
+    padding: 1em;
+    width: 100%;
+  }
+  
+  .footer ol {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 3rem;
+  }
+  
+  .footer i {
+    color: black;
+    width: 50%;
+  }
+  
+  /* -------------------------PORTFOLIO--------------------------------------*/ 
+  
+  .containerportfolio { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.6fr 0.2fr;
+    gap: 5px 5px;
+    grid-template-areas:
+      "header header header"
+      "section1portfolio section2portfolio asideportfolio"
+      "footer footer footer";
+      min-height: 50%;
+      min-width: 100%;
+      background-color: rgb(255, 243, 176);
+  }
+  
+  /* -------------HEADER----------------------- */
+  .header { 
+    grid-area: header; 
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background-color: rgb(254, 217, 183); 
+  }
+  
+  .header nav{
+    width: 100%;  
+  }
+  
+  .header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -80px;
+    list-style: none;
+  }
+  
+  .header li {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .header li a {
+    text-decoration: none;
+    color: rgb(34, 124, 157);
+  }
+  
+  .header li a:hover {
+    text-decoration: underline;
+  }
+  
+  .header nav img {
+    width: 5%;
+  }
+  
+  /* -------------SECCION 1------------------ */
+  
+  .section1portfolio { 
+    grid-area: section1portfolio;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+   }
+  
+   .divportfolio{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0 4rem 4rem;
+    padding: 2rem;
+    background-color: rgb(248, 246, 246);
+    border-radius: 5pt;
+    box-shadow: 5px 5px 5px rgb(190, 190, 190);
+  }
+  
+   .section1portfolio li{
+    list-style: none;
+    margin: 20%;
+   }
+  
+  .section1portfolio h1{
+    color: rgb(34, 124, 157);
+    font-size: 2rem;
+    } 
+  
+  /* ------------SECCION 2------------------- */
+  
+  .section2portfolio { 
+    grid-area: section2portfolio; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .classportfolio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+  }
+  
+  .classportfolio button{
+    padding: 0.5rem;
+    border-radius: 5pt;
+    font-size: 1rem;
+    background-color: rgb(184, 196, 201);
+  }
+  
+  .classportfolio button:active {
+    color: black;
+  }
+  
+  
+  /* -----------ASIDE------------------------ */
+  
+  .asideportfolio { grid-area: asideportfolio;
+   }
+  
+  .divclass4{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+  }
+  
+  .asideportfolio article a img {
+    padding: 1rem;
+  }
+  
+  .asideportfolio article p {
+    font-size: 0.8rem;
+    padding: 1em;
+    max-width: 400px;
+    width: o auto;
+  }
+  
+  .asideportfolio h3 {
+    color: rgb(34, 124, 157);
+    margin-top: 10%;
+  }
+  
+  .asideportfolio h5 {
+    margin: 10% 0 0 0;
+    color: rgb(34, 124, 157);
+  }
+  
+  /* ----------------FOOTER---------------------- */
+  
+  .footer { 
+      grid-area: footer; 
+      background-color: rgb(254, 217, 183);
+      padding: 1em;
+      width: 100%;
+    }
+    
+    .footer ol {
+      display: flex;
+      justify-content: space-evenly;
+      align-content: space-around;
+      align-items: center;
+      list-style: none;
+      height: 3rem;
+    }
+    
+    .footer i {
+      color: black;
+      width: 50%;
+    }
+  
+  
+  /* -------------MEDIA QUERIES PARA MOBILE -- index------------------------ */
+  
+  @media (max-width: 420px) {
+    .container {
+      grid-template-columns: 1fr 1fr 0.75fr;
+      grid-template-rows: 0.25fr 0.25fr 2fr 2fr 2fr;
+      grid-template-areas:
+      "header header header"
+      "main main main"
+      "section1 section1 section1"
+      "section2 section2 section2"
+      "section3 section3 section3"
+      "aside aside aside"
+      "footer footer footer";
+  }
+  
+    .nav ul{
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
+  
+    .nav li{ 
+      padding: 5px;
+    }
+    
+    .aside {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+  
+    .divclass4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+  
+    .aside h3 {
+    margin: 0 auto;
+    }
+  
+  }
+  
+  /* -----------------MEDIA QUERIES PARA MOBILE - portfolio----------- */
+  
+  @media (max-width: 420px) {
+    .containerportfolio {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 0.2fr 1.6fr 0.2fr;
+      grid-template-areas:
+      "header header header"
+      "section1portfolio section2portfolio section2portfolio"
+      "asideportfolio asideportfolio asideportfolio"
+      "footer footer footer";
+  }
+  
+  .section2portfolio img{
+    display: none;
+  }
+  
+  }
